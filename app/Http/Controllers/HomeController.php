@@ -64,6 +64,7 @@ class HomeController extends Controller
         $tempUserDetail = Auth::user()->userDetail ? Auth::user()->userDetail : new UserDetail;
         $tempUserDetail->user_id = Auth::user()->id;
         $tempUserDetail->full_name = request('full_name');
+        $tempUserDetail->phone = request('phone');
         $tempUserDetail->account_number = request('account_number');
         $tempUserDetail->bank = request('bank');
         $tempUserDetail->location = request('location');

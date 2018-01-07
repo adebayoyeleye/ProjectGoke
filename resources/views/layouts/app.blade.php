@@ -90,7 +90,7 @@
                     </form>
                 </div>-->
         
-        <div id="supportForm" class="row resetVisibles overlay" style="display: none">
+        <div id="supportForm" class="row centered resetVisibles overlay" style="display: none">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
                 <div class="panel-heading">Request Support Form</div>

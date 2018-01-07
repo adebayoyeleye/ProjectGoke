@@ -17,6 +17,7 @@ class CreateUserDetailsTable extends Migration
             $table->increments('id');
             $table->integer('user_id')->unsigned()->references('id')->on('users');
             $table->string('full_name');
+            $table->string('phone');
             $table->string('account_number');
             $table->string('bank');
             $table->string('location');

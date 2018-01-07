@@ -24,6 +24,22 @@
                             </div>
                         </div>
 
+                        
+                        <div class="form-group{{ $errors->has('phone') ? ' has-error' : '' }}">
+                            <label for="phone" class="col-md-4 control-label">Phone</label>
+
+                            <div class="col-md-6">
+                                <input id="full-name" type="text" class="form-control" name="phone" {!! Auth::user()->userDetail ? 'value="'.Auth::user()->userDetail->phone.'"' : 'placeholder="Enter Phone Number"' !!} required>
+
+                                       @if ($errors->has('phone'))
+                                       <span class="help-block">
+                                    <strong>{{ $errors->first('phone') }}</strong>
+                                </span>
+                                @endif
+                            </div>
+                        </div>
+                        
+                        
                         <div class="form-group{{ $errors->has('account_number') ? ' has-error' : '' }}">
                             <label for="account-number" class="col-md-4 control-label">Account Number</label>
 

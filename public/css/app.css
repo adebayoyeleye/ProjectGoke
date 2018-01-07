@@ -18,8 +18,8 @@
 
  .centered{
     position:absolute;
-/*    width:400px;
-    height:400px;*/
+    width:400px;
+    height:400px;
     left:50%;
     top:10%;
     margin-left:-200px;
